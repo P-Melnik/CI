@@ -40,7 +40,7 @@ pipeline {
                     def tomcatUrl = 'http://localhost:9095/manager/text'
                     def credentialsId = 'tomcat'
 
-                    sh "mvn tomcat7:deploy -Dmaven.tomcat.url=${tomcatUrl} -Dmaven.tomcat.server=${credentialsId}"
+                    sh "mvn tomcat7:redeploy -Dmaven.tomcat.url=${tomcatUrl} -Dmaven.tomcat.server=${credentialsId}"
                 }
             }
         }
