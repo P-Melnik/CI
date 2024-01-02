@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
 
-                    def tomcatUrl = 'http://localhost:9095'
+                    def tomcatUrl = 'http://localhost:9095/manager/text'
                     def credentialsId = 'tomcat'
 
                     sh "mvn tomcat7:deploy -Dmaven.tomcat.url=${tomcatUrl} -Dmaven.tomcat.server=${credentialsId}"
