@@ -74,6 +74,8 @@
 				<configuration>
 					<url>http://localhost:9095/manager/text</url>
 					<server>TomcatServer</server>
+					<username>admin</username>
+					<password>admin</password>
 <!--					<path>/ci</path>-->
 				</configuration>
 			</plugin>
